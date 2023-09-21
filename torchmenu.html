@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torch Menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .torchContainer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: start;
+            gap: 20px;
+            padding-top: 50px;
+        }
+
+        .menuContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gapingElement {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 50% 50% 0px 0px;
+            background-image: linear-gradient(to bottom, black 10%, gray 70%, white);
+            transition: all 1s ease-in-out;
+            box-shadow: 0px -10px 10px gray;
+
+        }
+
+        .gapingElementWithoutBackground {
+            background-image: none;
+            box-shadow: none;
+            transition: all 0.5s ease-in-out;
+        }
+
+        p {
+            position: relative;
+            top: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        img {
+            width: 50px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .torchRotation {
+            transform: rotate(133deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="torchContainer">
+            <div class="menuContainer">
+                <img class="torchImg " src="./torch.png" alt="Torch Icon">
+                <div class="gapingElement gapingElementWithoutBackground">
+                    <p>Home</p>
+                </div>
+            </div>
+
+            <div class="menuContainer">
+                <img class="torchImg" src="./torch.png" alt="Torch Icon">
+                <div class="gapingElement gapingElementWithoutBackground">
+                    <p>About Us</p>
+                </div>
+            </div>
+
+            <div class="menuContainer">
+                <img  class="torchImg" src="./torch.png" alt="Torch Icon">
+                <div class="gapingElement gapingElementWithoutBackground">
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+            <div class="menuContainer">
+                <img class="torchImg" src="./torch.png" alt="Torch Icon">
+                <div class="gapingElement gapingElementWithoutBackground">
+                    <p>Sign In</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./torchScript.js"></script>
+</body>
+</html>

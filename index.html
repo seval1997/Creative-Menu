@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Menu</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.container {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.menuContainer {
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        div.menu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50%;
+            visibility: collapse;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuVisible {
+            opacity: 1;
+            visibility: visible;
+            transition: all 1s ease-in-out;
+        }
+        
+        img {
+            width: 60%;
+        }
+
+
+        div.menuController {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+
+        .menuController > img {
+            width: 40%;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menuContainer">
+            <div class="menu menu1">
+                <img src="./github.png" alt="">
+            </div>
+
+            <div class="menu menu2">
+                <img src="./facebook (1).png" alt="">
+            </div>
+
+            <div class="menu menu3">
+                <img src="./instagram.png" alt="">
+            </div>
+
+            <div class="menu menu4">
+                <img src="./whatsapp.png" alt="">
+            </div>
+
+            <div class="menuController">
+                <img src="./menu.png" alt="">
+            </div>
+
+            <div class="menu menu5">
+                <img src="./youtube.png" alt="">
+            </div>
+
+            <div class="menu menu6">
+                <img src="./linkedin (1).png" alt="">
+            </div>
+
+            <div class="menu menu7">
+                <img src="./twitter.png" alt="">
+            </div>
+
+            <div class="menu menu8">
+                <img src="./email.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.container {
+            height: 100vh;
+            width: 100%;
+        }
+        
+        div.menuContainer {
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.menuController {
+            width: 50px;
+            height: 50px;
+        }
+
+
+        div.menuItem1, div.menuItem2, div.menuItem3, div.menuItem4
+        , div.menuItem5, div.menuItem6, div.menuItem7, div.menuItem8  {
+            position: absolute;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+            visibility: collapse;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuItem1Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% - 100px);
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuItem2Visible {
+            visibility: visible;
+            opacity: 1;
+            top: calc(50% - 100px);
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuItem3Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% + 50px);
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuItem4Visible {
+            visibility: visible;
+            opacity: 1;
+            top: calc(50% + 50px);
+            transition: all 1s ease-in-out;
+        }
+
+        div.menuItem5Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% - 80px);
+            top: calc(50% - 80px)
+        }
+
+        div.menuItem6Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% + 30px);
+            top: calc(50% - 80px)
+        }
+
+        div.menuItem7Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% + 30px);
+            top: calc(50% + 30px)
+        }
+
+        div.menuItem8Visible {
+            visibility: visible;
+            opacity: 1;
+            left: calc(50% - 80px);
+            top: calc(50% + 30px)
+        }
+
+
+
+        img {
+            width: 30px;
+            aspect-ratio: 1/1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menuContainer">
+            <div class="menuController">
+                <img src="./menu.png" alt="">
+            </div>
+
+            <div class="menuItem1">
+                <img src="./instagram.png" alt="">
+            </div>
+
+            <div class="menuItem2">
+                <img src="./github.png" alt="">
+            </div>
+
+            <div class="menuItem3">
+                <img src="./youtube.png" alt="">
+            </div>
+
+            <div class="menuItem4">
+                <img src="./linkedin (1).png" alt="">
+            </div>
+
+            <div class="menuItem5">
+                <img src="./twitter.png" alt="">
+            </div>
+
+            <div class="menuItem6">
+                <img src="./whatsapp.png" alt="">
+            </div>
+
+            <div class="menuItem7">
+                <img src="./facebook (1).png" alt="">
+            </div>
+
+            <div class="menuItem8">
+                <img src="./email.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./menu.js"></script>
+
+</body>
+</html>
